@@ -36,7 +36,6 @@ dependencies {
     }
 
 }
-
 publishing {
     publications {
         create<MavenPublication>("lab-rat-platform") {
