@@ -10,7 +10,7 @@ repositories {
         url = uri("https://packages.confluent.io/maven/")
     }
     maven {
-        name = "ed_github"
+        name = "edGithub"
         url = uri("https://maven.pkg.github.com/ydolzhenko/lab-rat")
     }
 }
