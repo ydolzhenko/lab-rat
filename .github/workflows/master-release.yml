@@ -18,8 +18,10 @@ jobs:
           distribution: 'adopt'
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
-      - name: Build with Gradle
+      - name: Building
         run: ./gradlew build
+      - name: Publishing
+        run: ./gradlew publish
 
 #  release:
 #    runs-on: ubuntu-latest
