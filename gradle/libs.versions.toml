@@ -1,0 +1,27 @@
+[versions]
+foojay-resolver = "0.8.0"
+arrow-stack = "1.2.4"
+mockk = "1.13.12"
+springmockk = "4.0.2"
+kotest = "5.9.1"
+logstash-logback-encoder = "7.4"
+owasp-dependencycheck = "11.1.1"
+
+#checkstyle = "8.37"
+
+[libraries]
+arrow-stack = { group = "io.arrow-kt", name = "arrow-stack", version.ref = "arrow-stack" }
+mockk-jvm = { group = "io.mockk", name = "mockk-jvm", version.ref = "mockk" }
+springmockk = { group = "com.ninja-squad", name = "springmockk", version.ref = "springmockk" }
+kotest-assertions-core-jvm = { group = "io.kotest", name = "kotest-assertions-core-jvm", version.ref = "kotest" }
+kotest-runner-junit5-jvm = { group = "io.kotest", name = "kotest-runner-junit5-jvm", version.ref = "kotest" }
+logstash-logback-encoder = { group = "net.logstash.logback", name = "logstash-logback-encoder", version.ref = "logstash-logback-encoder" }
+
+
+
+[bundles]
+kotest = ["kotest-assertions-core-jvm", "kotest-runner-junit5-jvm"]
+
+[plugins]
+foojay-resolver = {id = "org.gradle.toolchains.foojay-resolver-convention", version.ref="foojay-resolver"}
+owasp = {id = "org.owasp.dependencycheck", version.ref="owasp-dependencycheck"}
