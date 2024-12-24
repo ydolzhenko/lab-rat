@@ -35,6 +35,10 @@ val javaVersion: String by extra
 val springBootVersion: String by extra
 val kotlinVersion: String by extra
 
+println("HERE");
+println( System.getenv("PACKAGE_MASTER"));
+println( System.getenv("PACKAGE_MASTER_PASSWORD"));
+
 dependencyCheck {
  nvd {
      apiKey = "20956209-de3e-416f-8c3c-9a1a2703c406"
