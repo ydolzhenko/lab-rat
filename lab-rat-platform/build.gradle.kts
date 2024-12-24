@@ -43,4 +43,10 @@ publishing {
             from(components["javaPlatform"])
         }
     }
+    repositories {
+        maven {
+            name = "edGithub"
+            url = uri("https://maven.pkg.github.com/ydolzhenko/lab-rat")
+        }
+    }
 }
