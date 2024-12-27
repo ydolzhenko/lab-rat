@@ -30,3 +30,7 @@ configure<ReleaseExtension> {
         // to disable branch verification: requireBranch.set(null as String?)
     }
 }
+
+tasks.named("afterReleaseBuild") {
+    dependsOn("publish")
+}
