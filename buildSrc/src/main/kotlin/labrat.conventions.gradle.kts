@@ -121,7 +121,7 @@ tasks.withType<Jar> {
 
 publishing {
     publications {
-        create<MavenPublication>("lab-rat-platform") {
+        create<MavenPublication>(project.name) {
             from(components["javaPlatform"])
         }
     }
