@@ -9,10 +9,6 @@ pluginManagement {
         mavenCentral()
         gradlePluginPortal()
         maven {
-            name = "Confluent"
-            url = uri("https://packages.confluent.io/maven/")
-        }
-        maven {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/RoyalAholdDelhaize/lab-rat")
         }

@@ -1,5 +1,8 @@
 plugins {
     id("base")
+    alias(libs.plugins.gradle.release)
+
+
 }
 
 
