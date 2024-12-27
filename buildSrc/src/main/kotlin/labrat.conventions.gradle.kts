@@ -122,7 +122,7 @@ tasks.withType<Jar> {
 publishing {
     publications {
         create<MavenPublication>(project.name) {
-            from(components["javaPlatform"])
+            from(components["java"])
         }
     }
 
