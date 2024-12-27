@@ -18,7 +18,6 @@ subprojects {
 
 }
 
-
 configure<ReleaseExtension> {
     with(git) {
         requireBranch.set("master|legacy\\/[a-zA-Z0-9-_]+")
