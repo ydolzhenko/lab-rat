@@ -22,6 +22,8 @@ jobs:
         run: ./gradlew build
   release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     needs: build
     steps:
       - name: Checking out the source code
