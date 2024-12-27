@@ -34,6 +34,6 @@ tasks.register("publish") {
 
 tasks.named("afterReleaseBuild") {
     dependsOn(
-        subprojects.mapNotNull { it.tasks.findByName("publish") }
+        subprojects.mapNotNull { it.tasks.findByName("blah") }
     )
 }

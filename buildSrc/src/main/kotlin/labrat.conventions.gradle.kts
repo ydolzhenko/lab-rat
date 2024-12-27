@@ -51,7 +51,11 @@ java {
     }
 }
 
-
+tasks.register("blah") {
+    doLast {
+        println("HERE $version")
+    }
+}
 
 
 dependencies {
