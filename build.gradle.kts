@@ -37,6 +37,6 @@ configure<ReleaseExtension> {
 //    }
 //}
 
-tasks.named("afterReleaseBuild") {
-    dependsOn("publish")
-}
+//tasks.named("afterReleaseBuild") {
+//    dependsOn("publish")
+//}

@@ -39,44 +39,8 @@ jobs:
         run: |
           git config --local user.email "bot@electricdog.io"
           git config --local user.name "Electric Dog"
-      - name: Publish the snapshot
+      - name: Publish
         run: ./gradlew release -Prelease.useAutomaticVersion=true --info
         env:
           PACKAGE_MASTER: ${{ secrets.PACKAGE_MASTER }}
           PACKAGE_MASTER_PASSWORD: ${{ secrets.PACKAGE_MASTER_PASSWORD }}
-
-
-#  release:
-#    runs-on: ubuntu-latest
-#    steps:
-#      - name: Checking out the source code
-#        uses: actions/checkout@v2
-#        with:
-#          fetch-depth: 0
-#      - name: Setting up JDK 21
-#        uses: actions/setup-java@v2
-#        with:
-#          java-version: '21'
-#          distribution: 'adopt'
-#          server-id: ed_github
-#      - name: Caching Maven packages
-#        uses: actions/cache@v2
-#        with:
-#          path: ~/.m2
-#          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
-#          restore-keys: ${{ runner.os }}-m2
-#      - name: Compiling and testing
-#        run: mvn --batch-mode verify
-#      - name: Configure Git User
-#        run: |
-#          git config --local user.email "bot@electricdog.io"
-#          git config --local user.name "Electric Dog"
-#      - name: Preparing the release
-#        run: mvn --batch-mode release:prepare release:perform
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.PACKAGE_MASTER }}
-#      - name: Cancelling the release
-#        run: mvn --batch-mode release:rollback
-#        if: ${{ failure() }}
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.PACKAGE_MASTER }}
