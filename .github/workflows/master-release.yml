@@ -40,7 +40,7 @@ jobs:
           git config --local user.email "bot@electricdog.io"
           git config --local user.name "Electric Dog"
       - name: Publish the snapshot
-        run: ./gradlew release
+        run: ./gradlew release -Prelease.useAutomaticVersion=true
         env:
           PACKAGE_MASTER: ${{ secrets.PACKAGE_MASTER }}
           PACKAGE_MASTER_PASSWORD: ${{ secrets.PACKAGE_MASTER_PASSWORD }}
