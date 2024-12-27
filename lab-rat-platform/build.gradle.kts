@@ -44,4 +44,17 @@ publishing {
             from(components["javaPlatform"])
         }
     }
+
+    repositories {
+        maven {
+            name = "edGithub"
+            url = uri("https://maven.pkg.github.com/ydolzhenko/lab-rat")
+            credentials {
+                username = System.getenv("PACKAGE_MASTER")
+                password = System.getenv("PACKAGE_MASTER_PASSWORD")
+            }
+
+        }
+    }
+
 }
