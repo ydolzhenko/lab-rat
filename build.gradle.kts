@@ -23,7 +23,7 @@ apply(plugin = "base")
 apply(plugin = "net.researchgate.release")
 
 configure<ReleaseExtension> {
-    buildTasks = listOf("publish")
+//    buildTasks = listOf("publish")
 //    ignoredSnapshotDependencies.set(listOf("net.researchgate:gradle-release"))
     with(git) {
         requireBranch.set("master|legacy\\/[a-zA-Z0-9-_]+")
