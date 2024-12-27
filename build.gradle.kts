@@ -26,6 +26,12 @@ configure<ReleaseExtension> {
     }
 }
 
+tasks.register("publish") {
+    doLast {
+        println("Root module does not publish artifacts.")
+    }
+}
+
 tasks.named("afterReleaseBuild") {
     dependsOn("publish")
 }
