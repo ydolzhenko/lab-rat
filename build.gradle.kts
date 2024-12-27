@@ -24,6 +24,10 @@ configure<ReleaseExtension> {
     }
 }
 
+tasks.named("afterReleaseBuild") {
+    dependsOn("publish")
+}
+
 //publishing {
 //    repositories {
 //        maven {
@@ -37,6 +41,3 @@ configure<ReleaseExtension> {
 //    }
 //}
 
-//tasks.named("afterReleaseBuild") {
-//    dependsOn("publish")
-//}
