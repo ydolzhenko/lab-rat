@@ -23,9 +23,14 @@ apply(plugin = "base")
 apply(plugin = "net.researchgate.release")
 
 configure<ReleaseExtension> {
+//    buildTasks = listOf("publish")
 //    ignoredSnapshotDependencies.set(listOf("net.researchgate:gradle-release"))
     with(git) {
         requireBranch.set("master|legacy\\/[a-zA-Z0-9-_]+")
         // to disable branch verification: requireBranch.set(null as String?)
     }
+}
+
+tasks.named("afterReleaseBuild") {
+    dependsOn("publish")
 }
