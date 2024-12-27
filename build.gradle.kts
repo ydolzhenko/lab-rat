@@ -15,6 +15,12 @@ allprojects {
 }
 
 subprojects {
+
+    tasks.named("afterReleaseBuild") {
+        dependsOn("publish")
+    }
+
+
 }
 
 configure<ReleaseExtension> {
@@ -24,9 +30,6 @@ configure<ReleaseExtension> {
     }
 }
 
-tasks.named("afterReleaseBuild") {
-    dependsOn("publish")
-}
 
 //publishing {
 //    repositories {
