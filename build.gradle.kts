@@ -2,9 +2,8 @@ import net.researchgate.release.ReleaseExtension
 
 plugins {
     id("base")
+    `maven-publish`
     alias(libs.plugins.gradle.release)
-
-
 }
 
 
