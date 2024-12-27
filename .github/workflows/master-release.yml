@@ -25,7 +25,7 @@ jobs:
           git config --local user.email "bot@electricdog.io"
           git config --local user.name "Electric Dog"
       - name: Publish
-        run: ./gradlew release -Prelease.useAutomaticVersion=true
+        run: ./gradlew release -Prelease.useAutomaticVersion=true --info
         env:
           PACKAGE_MASTER: ${{ secrets.PACKAGE_MASTER }}
           PACKAGE_MASTER_PASSWORD: ${{ secrets.PACKAGE_MASTER_PASSWORD }}
