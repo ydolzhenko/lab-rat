@@ -139,6 +139,6 @@ publishing {
     }
 }
 
-tasks.named("afterReleaseBuild") {
-    dependsOn("publish")
-}
+//tasks.named("afterReleaseBuild") {
+//    dependsOn("publish")
+//}

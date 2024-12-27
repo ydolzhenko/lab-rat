@@ -53,7 +53,3 @@ publishing {
         }
     }
 }
-
-//tasks.named("afterReleaseBuild") {
-//    dependsOn("publish")
-//}
