@@ -8,7 +8,7 @@ class GeneralTest {
 
     @Test
     fun `it a test`() {
-        Assertions.assertTrue(true)
+        Assertions.assertTrue(false)
     }
 
 }
