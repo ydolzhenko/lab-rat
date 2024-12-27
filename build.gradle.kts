@@ -30,12 +30,6 @@ configure<ReleaseExtension> {
 }
 
 publishing {
-    publications {
-        create<MavenPublication>(project.name) {
-            from(components["java"])
-        }
-    }
-
     repositories {
         maven {
             name = "edGithub"
