@@ -1,7 +1,7 @@
 
 plugins {
     `java-platform`
-    `maven-publish`
+//    `maven-publish`
 }
 
 repositories {
@@ -36,20 +36,20 @@ dependencies {
     }
 
 }
-publishing {
-    publications {
-        create<MavenPublication>("lab-rat-platform") {
-            from(components["javaPlatform"])
-        }
-    }
-    repositories {
-        maven {
-            name = "edGithub"
-            url = uri("https://maven.pkg.github.com/ydolzhenko/lab-rat")
-            credentials {
-                username = System.getenv("PACKAGE_MASTER")
-                password = System.getenv("PACKAGE_MASTER_PASSWORD")
-            }
-        }
-    }
-}
+//publishing {
+//    publications {
+//        create<MavenPublication>("lab-rat-platform") {
+//            from(components["javaPlatform"])
+//        }
+//    }
+//    repositories {
+//        maven {
+//            name = "edGithub"
+//            url = uri("https://maven.pkg.github.com/ydolzhenko/lab-rat")
+//            credentials {
+//                username = System.getenv("PACKAGE_MASTER")
+//                password = System.getenv("PACKAGE_MASTER_PASSWORD")
+//            }
+//        }
+//    }
+//}
