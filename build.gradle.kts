@@ -1,8 +1,7 @@
-import net.researchgate.release.ReleaseExtension
 
 plugins {
     id("base")
-    alias(libs.plugins.gradle.release)
+//    alias(libs.plugins.gradle.release)
 //    `maven-publish`
 
 }
@@ -18,12 +17,12 @@ defaultTasks("build")
 //
 //}
 
-configure<ReleaseExtension> {
-    with(git) {
-        requireBranch.set("master|legacy\\/[a-zA-Z0-9-_]+")
-        // to disable branch verification: requireBranch.set(null as String?)
-    }
-}
+//configure<ReleaseExtension> {
+//    with(git) {
+//        requireBranch.set("master|legacy\\/[a-zA-Z0-9-_]+")
+//         to disable branch verification: requireBranch.set(null as String?)
+//    }
+//}
 
 //tasks.register("publish") {
 //    doLast {
