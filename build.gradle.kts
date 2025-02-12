@@ -12,8 +12,9 @@ scmVersion {
     tag {
         prefix = ""
     }
-}
+    versionCreator("versionWithBranch")
 
+}
 
 version = scmVersion.version
 
