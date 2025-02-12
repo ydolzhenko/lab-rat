@@ -33,6 +33,8 @@ jobs:
           distribution: 'temurin'
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
+      - name: Testing the version
+        run: ./gradlew cV
       - name: Publish the snapshot
         run: ./gradlew publish
         env:
