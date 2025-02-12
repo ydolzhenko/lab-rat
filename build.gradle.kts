@@ -9,6 +9,10 @@ plugins {
 description = "Lab-rat (not a real one)"
 
 scmVersion {
+    tag {
+        prefix = ""
+    }
+    versionCreator("versionWithBranch")
 
 }
 
