@@ -1,7 +1,7 @@
 
 plugins {
     id("base")
-//    alias(libs.plugins.gradle.release)
+    alias(libs.plugins.axion.release)
 //    `maven-publish`
 
 }
