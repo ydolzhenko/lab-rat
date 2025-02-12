@@ -26,6 +26,6 @@ jobs:
           git config --local user.name "Electric Dog"
       - name: Release
         run: ./gradlew build release
-#        env:
-#          PACKAGE_MASTER: ${{ secrets.PACKAGE_MASTER }}
-#          PACKAGE_MASTER_PASSWORD: ${{ secrets.PACKAGE_MASTER_PASSWORD }}
+        env:
+          PACKAGE_MASTER: ${{ secrets.PACKAGE_MASTER }}
+          PACKAGE_MASTER_PASSWORD: ${{ secrets.PACKAGE_MASTER_PASSWORD }}
