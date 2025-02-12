@@ -29,8 +29,6 @@ if (project.parent != null) {
     group = "com.ahold.labrat"
 }
 
-version = "$version"
-
 val javaVersion: String by extra
 val springBootVersion: String by extra
 val kotlinVersion: String by extra
