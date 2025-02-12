@@ -8,10 +8,17 @@ plugins {
 
 description = "Lab-rat (not a real one)"
 
+scmVersion {
+
+}
+
+version = scmVersion.version
+
 defaultTasks("build")
 
-//allprojects {
-//}
+allprojects {
+    project.version = rootProject.version
+}
 //
 //subprojects {
 //
