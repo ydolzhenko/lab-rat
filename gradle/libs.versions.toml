@@ -7,7 +7,7 @@ kotest = "5.9.1"
 logstash-logback-encoder = "7.4"
 owasp-dependencycheck = "11.1.1"
 gradle-release = "3.1.0"
-
+axion-release = "1.18.16"
 
 #checkstyle = "8.37"
 
@@ -28,3 +28,4 @@ kotest = ["kotest-assertions-core-jvm", "kotest-runner-junit5-jvm"]
 foojay-resolver = {id = "org.gradle.toolchains.foojay-resolver-convention", version.ref="foojay-resolver"}
 owasp = {id = "org.owasp.dependencycheck", version.ref="owasp-dependencycheck"}
 gradle-release = {id = "net.researchgate.release", version.ref="gradle-release"}
+axion-release = {id = "pl.allegro.tech.build.axion-release", version.ref="axion-release"}
