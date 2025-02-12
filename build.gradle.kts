@@ -11,12 +11,12 @@ description = "Lab-rat (not a real one)"
 
 defaultTasks("build")
 
-allprojects {
-}
-
-subprojects {
-
-}
+//allprojects {
+//}
+//
+//subprojects {
+//
+//}
 
 configure<ReleaseExtension> {
     with(git) {
@@ -25,14 +25,14 @@ configure<ReleaseExtension> {
     }
 }
 
-tasks.register("publish") {
-    doLast {
-        println("Root module does not publish artifacts.")
-    }
-}
-
-tasks.named("afterReleaseBuild") {
-    dependsOn(
-        subprojects.mapNotNull { it.tasks.findByName("blah") }
-    )
-}
+//tasks.register("publish") {
+//    doLast {
+//        println("Root module does not publish artifacts.")
+//    }
+//}
+//
+//tasks.named("afterReleaseBuild") {
+//    dependsOn(
+//        subprojects.mapNotNull { it.tasks.findByName("blah") }
+//    )
+//}
