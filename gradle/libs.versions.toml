@@ -5,7 +5,7 @@ mockk = "1.13.12"
 springmockk = "4.0.2"
 kotest = "5.9.1"
 logstash-logback-encoder = "7.4"
-owasp-dependencycheck = "11.1.1"
+owasp-dependencycheck = "12.1.0"
 gradle-release = "3.1.0"
 axion-release = "1.18.16"
 
