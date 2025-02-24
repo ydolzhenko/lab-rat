@@ -35,7 +35,7 @@ val kotlinVersion: String by extra
 
 dependencyCheck {
  nvd {
-     apiKey = "20956209-de3e-416f-8c3c-9a1a2703c406"
+     apiKey = "b5a7bd9b-c49e-44fd-baeb-0d54fc0c069a"
  }
 }
 
