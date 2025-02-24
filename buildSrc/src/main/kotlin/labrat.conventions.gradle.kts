@@ -34,8 +34,16 @@ val springBootVersion: String by extra
 val kotlinVersion: String by extra
 
 dependencyCheck {
+    analyzers {
+        assemblyEnabled = false
+        nugetconfEnabled = false
+        nuspecEnabled = false
+        cocoapodsEnabled = false
+        rubygemsEnabled = false
+    }
  nvd {
      apiKey = "b5a7bd9b-c49e-44fd-baeb-0d54fc0c069a"
+     datafeedUrl = "https://dependency-check.github.io/DependencyCheck_Builder/nvd_cache/nvdcve-{0}.json.gz"
  }
 }
 
