@@ -63,7 +63,6 @@ tasks.register("blah") {
     }
 }
 
-
 dependencies {
 
     implementation(platform(project(":lab-rat-platform")))
