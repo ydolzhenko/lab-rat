@@ -23,6 +23,7 @@ defaultTasks("build")
 allprojects {
     project.version = rootProject.version
 }
+
 //
 //subprojects {
 //
