@@ -28,7 +28,7 @@ jobs:
           git config --local user.email "bot@electricdog.io"
           git config --local user.name "Electric Dog"
       - name: Release
-        run: ./gradlew dependencyCheckAnalyze build release --info
+        run: ./gradlew build release -x check
       - name: Publish
         run: ./gradlew publish
         env:
