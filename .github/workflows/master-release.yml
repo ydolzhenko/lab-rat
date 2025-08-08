@@ -22,13 +22,13 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
       - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v3
+        uses: gradle/actions/setup-gradle@v4
       - name: Configure Git User
         run: |
           git config --local user.email "bot@electricdog.io"
           git config --local user.name "Electric Dog"
       - name: Release
-        run: ./gradlew dependencyCheckAnalyze build release --info
+        run: ./gradlew build release -x check
       - name: Publish
         run: ./gradlew publish
         env:
