@@ -18,9 +18,6 @@
 
 # mvn --no-transfer-progress -DperformRelease=true -Ddependency-check-maven.skip=true -DskipTests=true -DskipITs=true deploy
 
-PACKAGE_MASTER=$PACKAGES_USER
-PACKAGE_MASTER_PASSWORD=$PACKAGES_TOKEN
-
 #git fetch --tags --unshallow
 
-./gradlew cV --no-daemon
+./gradlew build release -x check
